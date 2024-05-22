@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.figure_factory as ff
-import os 
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -18,7 +17,6 @@ if fl is not None:
     df = pd.read_csv(filename, encoding = "ISO-8859-1")
 
 else:
-    os.chdir(r"/Users/tdoan/Downloads/project/DA")
     df = pd.read_csv("Superstore.csv", encoding = "ISO-8859-1")
     
 col1, col2 = st.columns((2))
