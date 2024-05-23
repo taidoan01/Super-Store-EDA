@@ -17,7 +17,7 @@ if fl is not None:
     df = pd.read_csv(filename, encoding = "ISO-8859-1")
 
 else:
-    df = pd.read_csv("Superstore.csv", encoding = "ISO-8859-1")
+    df = pd.read_csv("./Data/Superstore.csv", encoding = "ISO-8859-1")
     
 col1, col2 = st.columns((2))
 
